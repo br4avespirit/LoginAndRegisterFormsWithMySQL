@@ -13,6 +13,7 @@ public class RegisterPanel extends Panel{
     private JButton backButton, confirmButton;
     private JLabel exceptionLabel, congratulationLabel;
 
+    // panel to register new user
     public RegisterPanel(CardLayout cardLayout, JPanel panel) {
         super(cardLayout, panel);
     }
