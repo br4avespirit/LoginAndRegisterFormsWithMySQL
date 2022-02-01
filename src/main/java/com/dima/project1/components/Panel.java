@@ -1,11 +1,16 @@
 package com.dima.project1.components;
 
+import lombok.Getter;
+
 import javax.swing.*;
 import java.awt.*;
 
+
 public abstract class Panel extends JPanel {
 
+    @Getter
     private final CardLayout cardLayout;
+    @Getter
     private final JPanel panel;
 
     public Panel(CardLayout cardLayout, JPanel panel){
@@ -16,14 +21,6 @@ public abstract class Panel extends JPanel {
     }
 
     abstract void initPanel();
-
-    public CardLayout getCardLayout(){
-        return cardLayout;
-    }
-
-    public JPanel getPanel(){
-        return panel;
-    }
 
     public void clean(){
         for (Component component: this.getComponents()){
