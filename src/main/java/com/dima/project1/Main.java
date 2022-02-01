@@ -8,8 +8,14 @@ import com.dima.project1.components.UserPanel;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Main class that will execute out program
+ */
 public class Main {
 
+    /**
+     * Method initializes all the necessary objects to run the program
+     */
     public static void main(String[] args) {
         MainWindow window = new MainWindow(350, 200, "Project1");
 
