@@ -21,7 +21,7 @@ public class RegisterPanel extends Panel{
         exceptionLabel = new JLabel("User with this nickname is already exists");
         congratulationLabel = new JLabel("Congratulations! You've registered new user");
         exceptionLabel.setBounds(10, 80, 200, 25);
-        congratulationLabel.setBounds(10, 80, 300, 25);
+        congratulationLabel.setBounds(10, 80, 350, 25);
         exceptionLabel.setForeground(Color.RED);
         congratulationLabel.setForeground(Color.GREEN);
         exceptionLabel.setVisible(false);
