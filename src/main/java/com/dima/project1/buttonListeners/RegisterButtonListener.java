@@ -8,13 +8,17 @@ import java.awt.event.ActionEvent;
 
 public class RegisterButtonListener extends ButtonListener {
 
-    public RegisterButtonListener(CardLayout cardLayout, JPanel panel) {
+    private final JLabel exceptionLabel;
+
+    public RegisterButtonListener(CardLayout cardLayout, JPanel panel, JLabel exceptionLabel) {
         super(cardLayout, panel);
+        this.exceptionLabel = exceptionLabel;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         clearMainPanel();
+        exceptionLabel.setVisible(false);
         getCardLayout().show(getPanel(), "register");
     }
 

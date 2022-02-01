@@ -48,7 +48,7 @@ public class MainPanel extends Panel {
         registerButton = new JButton("Register");
         registerButton.setBounds(110, 110, 100, 25);
         registerButton.setFocusPainted(false);
-        registerButton.addActionListener(new RegisterButtonListener(getCardLayout(), getPanel()));
+        registerButton.addActionListener(new RegisterButtonListener(getCardLayout(), getPanel(), exceptionLabel));
         add(registerButton);
     }
 
